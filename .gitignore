@@ -1,0 +1,109 @@
+############################
+# PYTHON
+############################
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+############################
+# VIRTUAL ENVIRONMENTS
+############################
+
+env/
+venv/
+rasa-env/
+.venv/
+ENV/
+
+############################
+# ENV FILES (SECRETS)
+############################
+
+.env
+.env.*
+!.env.example
+
+############################
+# LOG FILES
+############################
+
+*.log
+logs/
+*.txt
+
+############################
+# FLASK
+############################
+
+instance/
+.webassets-cache
+
+# Local databases
+*.db
+*.sqlite3
+
+############################
+# RASA
+############################
+
+# Models (large, auto-generated)
+models/
+.rasa/
+.cache/
+
+# Cache and temp
+.rasa/
+.cache/
+tmp/
+.temp/
+
+# Tracker DB
+tracker.db
+
+############################
+# IDE / EDITORS
+############################
+
+.vscode/
+.idea/
+*.iml
+
+############################
+# OS FILES
+############################
+
+.DS_Store
+Thumbs.db
+
+############################
+# BUILD / DIST
+############################
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+############################
+# TESTING
+############################
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+############################
+# MISC
+############################
+
+*.swp
+*.swo
+*.bak
+*.pid
+
+############################
+# OPTIONAL (If using Docker)
+############################
+
+docker-compose.override.yml
