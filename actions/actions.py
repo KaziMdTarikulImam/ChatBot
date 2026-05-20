@@ -5,6 +5,8 @@ from datetime import datetime
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 import requests
+
+
 ######### Conversation Logger #########
 #  Logging Utility
 LOG_BASE_DIR = "log"
@@ -106,7 +108,7 @@ class ActionDefaultFallback(Action):
         user_message = tracker.latest_message.get("text")
 
         try:
-            # 🔥 API Call
+            #API Call
             response = requests.post(
                 "http://127.0.0.1:5030/",
                 json={"question": user_message},
